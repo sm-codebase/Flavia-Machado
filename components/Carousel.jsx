@@ -73,13 +73,13 @@ function Carousel() {
   }, [isHovered, currentIndex]);
 
   return (
-    <div className="bg-gray-800 min-h-[600px] p-10">
+    <div className=" min-h-[600px] p-10">
       <div
         className="max-w-[1000px] h-[520px] w-full m-auto py-  relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="w-full h-full  bg-center bg-cover duration-500 relative">
+        <div className="w-full h-full  bg-center bg-cover duration-500 relative mt-24">
           <Image
             className="rounded-md  duration-500"
             src={slides[currentIndex].src}

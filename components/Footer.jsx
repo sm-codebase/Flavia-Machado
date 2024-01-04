@@ -13,7 +13,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div>
-      <div className="bg-gradient-to-r from-[#487d49] to-[#7bb27a]  h-1/2 w-full flex md:flex-row justify-around p-10 ">
+      <div className="  h-1/2 w-full flex md:flex-row justify-around p-10 ">
         <div className=" ">
           <ul>
             <a>
@@ -77,7 +77,7 @@ function Footer() {
         <h3 className=" text-gray-800 font-semibold">
           © 2024 Flavia  | Todos os direitos reservados |
           Desenvolvido ❤ pela{" "}
-          <span className="hover:text-green-400 font-semibold cursor-pointer">
+          <span className="hover:text-gray-400 font-semibold cursor-pointer">
             <a
               href="https://www.sousasmidia.com.br/"
               target="_blank"

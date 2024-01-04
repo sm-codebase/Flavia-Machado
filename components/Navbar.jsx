@@ -7,7 +7,7 @@ import NavLogo from "../public/assets/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("white");
+  const [color, setColor] = useState("black");
   const [textColor, setTextColor] = useState("white");
 
   const handleNav = () => {
@@ -29,8 +29,9 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${color}` }}
       className={
-        "h-[95px]  top-0  w-full z-10 p-4 bg-gray-900 ease-in duration-300"
+        "fixed h-[95px]  top-0  w-full z-10 p-4  ease-in duration-300"
       }
     >
       <div className="flex items-center justify-between w-full h-full ">
@@ -55,19 +56,19 @@ const Navbar = () => {
           <li className="p-4 hover:text-white">
             <Link href="/"></Link>
           </li>
-          <li className="p-4 hover:text-gray-900">
+          <li className="p-4 hover:text-gray-600">
             <Link href="/#quemsomos">Quem somos</Link>
           </li>
-          <li className="p-4 hover:text-gray-900">
+          <li className="p-4 hover:text-gray-600">
             <Link href="/#services">Serviços</Link>
           </li>
-          <li className="p-4 hover:text-gray-900">
+          <li className="p-4 hover:text-gray-600">
             <Link href="/#valores">Nossos Valores</Link>
           </li>
-          <li className="p-4 hover:text-gray-900">
+          <li className="p-4 hover:text-gray-600">
             <Link href="/#localizacao">Localização</Link>
           </li>
-          <li className="p-4 hover:text-gray-900">
+          <li className="p-4 hover:text-gray-600">
             <Link href="/contact">Contato</Link>
           </li>
         </ul>
@@ -84,44 +85,44 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#487d49] to-[#7bb27a]  text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#487d49] to-[#7bb27a] text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838]  text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838] text-center ease-in duration-300"
           }
         >
           <ul>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/">Home</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/#quemsomos">Quem somos</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/#services">Serviços</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/#valores">Nossos valores</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/#localizacao">Localização</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-900"
+              className="p-4 text-4xl text-white hover:text-gray-600"
             >
               <Link href="/contact">Contato</Link>
             </li>

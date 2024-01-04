@@ -9,7 +9,7 @@ import {
 
 const Valores = () => {
   return (
-    <div id="valores" className="container rounded-lg mx-auto bg-gradient-to-r from-gray-800 to-gray-700 text-white p-5">
+    <div id="valores" className="container rounded-lg mx-auto  text-white p-5">
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <div>
@@ -35,90 +35,90 @@ const Valores = () => {
           <div className="justify-center">
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4">
                   <h1 className="text-white">
                     <FaHandshake size={20}/>
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Integridade
+                  Nossos Princípios para Eventos Memoráveis
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Somos justos e honestos, comprometidos com nossa ética.
+                  Na Flavia Machado, celebramos momentos únicos com dedicação e paixão. Nossos valores fundamentais refletem a essência do nosso compromisso em tornar cada evento extraordinário.
                   </p>
                 </div>
               </a>
             </div>
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4 mt-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4 mt-4">
                   <h1 className="text-white">
                     <FaUsers size={20} />
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Colaboração
+                  Harmonia
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Valorizamos o trabalho em equipe.
+                  Em nosso espaço exclusivo, cultivamos a harmonia e a integridade, garantindo eventos que ressoam autenticidade.
                   </p>
                 </div>
               </a>
             </div>
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4">
                   <h1 className="text-white">
                     <FaArrowAltCircleUp size={20}/>
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Empenho
+                  Conexão
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Demonstramos uma grande vontade de vencer.
+                  Acreditamos na força da colaboração, unindo esforços para criar experiências que conectam pessoas e propósitos.
                   </p>
                 </div>
               </a>
             </div>
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4">
                   <h1 className="text-white">
                     <FaHeartbeat size={20} />
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Perspectiva
+                  Dedicação
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Buscamos equilíbrio em todas as nossas ações.
+                  Com empenho inabalável, nos dedicamos a superar expectativas, transformando visões em realidade.
                   </p>
                 </div>
               </a>
             </div>
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4">
                   <h1 className="text-white">
                     <FaEye size={20}/>
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Perspectiva
+                  Elegância
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Buscamos equilíbrio em todas as nossas ações.
+                  Buscamos a perspectiva perfeita em cada detalhe, adicionando um toque de equilíbrio e elegância a todas as ocasiões.
                   </p>
                 </div>
               </a>
             </div>
             <div className="my-4 w-full px-4">
               <a>
-                <div className="bg-gray-900 shadow-lg rounded-lg p-4">
+                <div className="bg-gray-400 shadow-lg rounded-lg p-4">
                   <h1 className="text-white">
                     <FaHeartbeat size={20}/>
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">
-                    Melhoria Contínua
+                  Inovação
                   </p>
                   <p className="text-sm text-white mt-4 font-thin">
-                    Estamos constantemente em busca de novas soluções.
+                  Na vanguarda do setor de eventos, promovemos a melhoria contínua, explorando constantemente novas ideias e soluções.
                   </p>
                 </div>
               </a>
