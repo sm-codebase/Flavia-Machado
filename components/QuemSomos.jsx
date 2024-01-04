@@ -32,15 +32,7 @@ const quemSomos = () => {
           </p>
         </div>
         </div>
-        <div className="py-2 px-10 md-w-1/2 md:pr-5 mt-10 pt-10">
-          <Image
-            src={ProdutoImg}
-            alt="imagem do produto"
-            width={200}
-            height={200}
-            className="mx-auto block lg:w-full lg:h-auto rounded-lg"
-          />
-        </div>
+        
       </div>
     </div>
   );

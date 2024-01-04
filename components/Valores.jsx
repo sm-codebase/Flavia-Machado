@@ -9,7 +9,7 @@ import {
 
 const Valores = () => {
   return (
-    <div id="valores" className="container rounded-lg mx-auto bg-gradient-to-r from-[#487d49] to-[#7bb27a] text-white p-5">
+    <div id="valores" className="container rounded-lg mx-auto bg-gradient-to-r from-gray-800 to-gray-700 text-white p-5">
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <div>
@@ -111,7 +111,7 @@ const Valores = () => {
             <div className="my-4 w-full px-4">
               <a>
                 <div className="bg-gray-900 shadow-lg rounded-lg p-4">
-                  <h1 className="text-gray-900">
+                  <h1 className="text-white">
                     <FaHeartbeat size={20}/>
                   </h1>
                   <p className="text-lg text-white mt-4 font-semibold">

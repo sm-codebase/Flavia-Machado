@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       className={
-        " h-[95px]  top-0  w-full z-10 p-4 bg-[#487d49] ease-in duration-300"
+        "h-[95px]  top-0  w-full z-10 p-4 bg-gray-900 ease-in duration-300"
       }
     >
       <div className="flex items-center justify-between w-full h-full ">
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="ms-auto "></div>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4 hover:text-white">
-            <Link href="/"> </Link>
+            <Link href="/"></Link>
           </li>
           <li className="p-4 hover:text-gray-900">
             <Link href="/#quemsomos">Quem somos</Link>
@@ -84,27 +84,45 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#487d49] to-[#7bb27a]  text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#487d49] to-[#7bb27a] text-center ease-in duration-300"
           }
         >
           <ul>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/">Home</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/#quemsomos">Quem somos</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/#services">Serviços</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/#valores">Nossos valores</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/#localizacao">Localização</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-900">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-900"
+            >
               <Link href="/contact">Contato</Link>
             </li>
           </ul>

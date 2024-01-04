@@ -26,7 +26,7 @@ function Footer() {
               />
             </a>
             
-            <div className="flex pl-2 gap-6 -mt-10">
+            <div className="flex pl-2 gap-6 -mt-12">
               <a
                 href="https://www.facebook.com/flaviamachadobuffeteeventos/?locale=pt_BR"
                 target="_blank"

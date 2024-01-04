@@ -1,7 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import ProdutoImg1 from "../public/assets/pt-img-1.jpg";
+import ProdutoImg2 from "../public/assets/pt-img-2.jpg";
+import ProdutoImg3 from "../public/assets/pt-img-3.jpg";
+import ProdutoImg4 from "../public/assets/pt-img-4.jpg";
 
-import ProdutoImg from "../public/assets/img-2.jpg";
 
 const services = () => {
   return (
@@ -19,13 +22,50 @@ const services = () => {
       
 
       <div className="py-2 px-10 md-w-1/2 md:pr-5 mt-10">
+      <div className="font-bold text-2xl text-center p-4">
+      <p>Eventos</p>
+      </div>
         <Image
-          src={ProdutoImg}
+          src={ProdutoImg1}
           alt="imagem do produto"
-          width={200}
-          height={200}
-          className="mx-auto block lg:w-full lg:h-auto rounded-lg"
+          width={300}
+          height={300}
+          className="mx-auto block lg:w-full lg:h-auto rounded-sm"
         />
+        <div className="font-bold text-2xl text-center p-4">
+        <p>Eventos</p>
+        </div>
+          <Image
+            src={ProdutoImg2}
+            alt="imagem do produto"
+            width={300}
+            height={300}
+            className="mx-auto block lg:w-full lg:h-auto rounded-sm"
+          />
+          <div className="font-bold text-2xl text-center p-4">
+      <p>Eventos</p>
+      </div>
+        <Image
+          src={ProdutoImg3}
+          alt="imagem do produto"
+          width={300}
+          height={300}
+          className="mx-auto block lg:w-full lg:h-auto rounded-sm"
+        />
+        <div className="font-bold text-2xl text-center p-4">
+      <p>Eventos</p>
+      </div>
+        <Image
+          src={ProdutoImg4}
+          alt="imagem do produto"
+          width={300}
+          height={300}
+          className="mx-auto block lg:w-full lg:h-auto rounded-sm"
+        />
+        
+
+
+
       </div>
       </div>
     </div>
