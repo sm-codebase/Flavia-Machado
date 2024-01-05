@@ -53,8 +53,8 @@ const Navbar = () => {
 
         <div className="ms-auto "></div>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4 hover:text-white">
-            <Link href="/"></Link>
+          <li className="p-4 hover:text-gray-600">
+            <Link href="/">Home</Link>
           </li>
           <li className="p-4 hover:text-gray-600">
             <Link href="/#quemsomos">Quem somos</Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <Link href="/#services">Serviços</Link>
           </li>
           <li className="p-4 hover:text-gray-600">
-            <Link href="/#valores">Nossos Valores</Link>
+            <Link href="/#valores">Principios</Link>
           </li>
           <li className="p-4 hover:text-gray-600">
             <Link href="/#localizacao">Localização</Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl text-white hover:text-gray-600"
             >
-              <Link href="/#valores">Nossos valores</Link>
+              <Link href="/#valores">Principios</Link>
             </li>
             <li
               onClick={handleNav}

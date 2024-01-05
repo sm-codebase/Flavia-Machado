@@ -43,6 +43,6 @@ html {
   
 
   button {
-    @apply rounded-xl uppercase bg-gradient-to-r from-[#487d49] to-[#7bb27a] text-white;
+    @apply rounded-xl uppercase bg-gradient-to-r from-black to-gray-800 text-white;
   }
 }
