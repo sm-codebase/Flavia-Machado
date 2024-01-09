@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Carousel from "../components/Carousel";
-import Instagram from "../components/Instagram";
 import Services from "../components/Services";
 import QuemSomos from "../components/QuemSomos";
 import Valores from "../components/Valores";

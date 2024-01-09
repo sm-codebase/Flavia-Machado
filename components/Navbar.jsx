@@ -59,9 +59,7 @@ const Navbar = () => {
           <li className="p-4 hover:text-gray-600">
             <Link href="/#quemsomos">Galeria de fotos</Link>
           </li>
-          <li className="p-4 hover:text-gray-600">
-            <Link href="/#services">Serviços</Link>
-          </li>
+         
           <li className="p-4 hover:text-gray-600">
             <Link href="/#valores">Principios</Link>
           </li>
