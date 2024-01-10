@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Carousel from "../components/Carousel";
-import Instagram from "../components/Instagram";
-import Services from "../components/Services";
-import QuemSomos from "../components/QuemSomos";
+import Video from "../components/Video";
+import Gallery from "../components/Gallery";
 import Valores from "../components/Valores";
 import SimpleMap from "../components/SimpleMap";
 
@@ -15,8 +14,8 @@ export default function Home() {
         <link rel="icon" href="/logo-1.png" />
       </Head>
       <Carousel />
-      <Services />
-      <QuemSomos />
+      <Video />
+      <Gallery />
       <Valores />
       <SimpleMap />
     </div>
