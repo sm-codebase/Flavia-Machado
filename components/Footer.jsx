@@ -60,7 +60,7 @@ function Footer() {
               Sobre nós
             </p>
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#valores">Principios</Link>
+              <Link href="/#principios">Principios</Link>
             </li>
             
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
