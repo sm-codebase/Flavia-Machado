@@ -30,9 +30,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className={
-        "fixed h-[95px]  top-0  w-full z-10 p-4  ease-in duration-300"
-      }
+      className={"fixed h-[95px]  top-0  w-full z-10 p-4  ease-in duration-300"}
     >
       <div className="flex items-center justify-between w-full h-full ">
         <Link legacyBehavior href="/">
@@ -59,7 +57,6 @@ const Navbar = () => {
           <li className="p-4 hover:text-gray-600">
             <Link href="/#quemsomos">Galeria de fotos</Link>
           </li>
-         
           <li className="p-4 hover:text-gray-600">
             <Link href="/#valores">Principios</Link>
           </li>
@@ -100,12 +97,7 @@ const Navbar = () => {
             >
               <Link href="/#quemsomos">Galeria de fotos</Link>
             </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/#services">Serviços</Link>
-            </li>
+
             <li
               onClick={handleNav}
               className="p-4 text-4xl text-white hover:text-gray-600"

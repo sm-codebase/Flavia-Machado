@@ -11,10 +11,10 @@ import { MdOutlineBuildCircle } from "react-icons/md";
 const Valores = () => {
   return (
     <div id="valores" className="container rounded-lg mx-auto  text-white p-5">
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="grid justify-items-center">
         <div className="md:w-1/2">
           <div>
-            <h1 className="text-2xl font-bold mb-2">
+            <h1 className="text-2xl font-bold mb-2 text-center">
               Nossos Princípios para Eventos Memoráveis
             </h1>
           </div>

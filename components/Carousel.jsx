@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { RxDotFilled } from "react-icons/rx";
-import primg1 from "../public/assets/carousel/pr-img-1.jpg";
-import primg2 from "../public/assets/carousel/pr-img-2.jpg";
-import primg3 from "../public/assets/carousel/pr-img-3.jpg";
-import primg4 from "../public/assets/carousel/pr-img-4.jpg";
+import primg1 from "../public/assets/carousel/pr-img-1.jpeg";
+import primg2 from "../public/assets/carousel/pr-img-2.jpeg";
+import primg3 from "../public/assets/carousel/pr-img-3.jpeg";
+import primg4 from "../public/assets/carousel/pr-img-4.jpeg";
 import { TbSquareArrowLeftFilled, TbSquareArrowRightFilled } from "react-icons/tb";
 
 const slides = [
@@ -12,7 +12,7 @@ const slides = [
     id: 1,
     src: primg1,
     alt: "Image 1",
-    summary: "Casamento",
+    summary: "Casamentos",
     description: " ",
   },
   {
@@ -33,7 +33,7 @@ const slides = [
     id: 4,
     src: primg4,
     alt: "Image 4",
-    summary: "shows",
+    summary: "Celebrações",
     description: "",
   },
 ];
