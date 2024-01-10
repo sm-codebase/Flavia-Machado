@@ -6,7 +6,7 @@ import ProdutoImg3 from "../public/assets/galeria/pt-img-3.jpeg";
 
 const gallery = () => {
   return (
-    <div id="quemsomos" className="container mx-auto text-black p-4">
+    <div id="galeria" className="container mx-auto text-black p-4">
       <div className="grid justify-items-center">
         <div className="text-white text-2xl p-2">
           <p>Galeria de fotos</p>
