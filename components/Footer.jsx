@@ -25,7 +25,7 @@ function Footer() {
                 className="cursor-pointer"
               />
             </a>
-            
+
             <div className="flex pl-2 gap-6 -mt-12">
               <a
                 href="https://www.facebook.com/flaviamachadobuffeteeventos/?locale=pt_BR"
@@ -62,19 +62,17 @@ function Footer() {
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="/#principios">Principios</Link>
             </li>
-            
+
             <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="/contact">Contato </Link>
             </li>
           </ul>
         </div>
-        </div>
-        
-      
+      </div>
+
       <div className="flex flex-col justify-center items-center text-center p-5 bg-gray-50">
         <h3 className=" text-gray-800 font-semibold">
-          © 2024 Flavia  | Todos os direitos reservados |
-          Desenvolvido ❤ pela{" "}
+          © 2024 Flavia | Todos os direitos reservados | Desenvolvido ❤ pela{" "}
           <span className="hover:text-gray-400 font-semibold cursor-pointer">
             <a
               href="https://www.sousasmidia.com.br/"
