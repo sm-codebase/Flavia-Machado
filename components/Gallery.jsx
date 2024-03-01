@@ -11,7 +11,9 @@ const Gallery = () => {
   const images = [ProdutoImg1, ProdutoImg2, ProdutoImg3];
 
   const handleClick = (img) => {
-    setSelectedImg(img);
+    setSelectedImg(img);2
+
+    
   };
 
   const handlePrev = () => {
