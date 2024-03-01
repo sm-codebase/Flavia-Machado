@@ -13,60 +13,41 @@ import Link from "next/link";
 function Footer() {
   return (
     <div>
-      <div className="  h-1/2 w-full flex md:flex-row justify-around p-10 ">
+      <div className=" bg-[#38220f] h-[200px] w-full flex md:flex-row justify-around items-center flex-col p-10">
         <div className=" ">
-          <ul>
-            <a>
-              <Image
-                src={NavLogo}
-                alt="/"
-                width="170"
-                height="70"
-                className="cursor-pointer"
-              />
-            </a>
-
-            <div className="flex pl-2 gap-6 -mt-12">
-              <a
-                href="https://www.facebook.com/flaviamachadobuffeteeventos/?locale=pt_BR"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="text-2xl text-white cursor-pointer hover:text-gray-300 ">
-                  <FaFacebook />
-                </div>
-              </a>
-              <a
-                href="https://www.instagram.com/flaviamachadobuffeteventos/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
-                  <FaInstagram />
-                </div>
-              </a>
-              <a href="https://wa.link/" target="_blank" rel="noreferrer">
-                <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
-                  <FaWhatsapp />
-                </div>
-              </a>
-            </div>
-          </ul>
+          <Image
+            src={NavLogo}
+            alt="/"
+            width="150"
+            height="70"
+            className="cursor-pointer"
+          />
         </div>
 
-        <div className="pb-5 pl-2">
-          <ul>
-            <p className="text-white font-bold text-2xl pb-4 mt-10  ">
-              Sobre nós
-            </p>
-            <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/#principios">Principios</Link>
-            </li>
-
-            <li className="text-gray-300 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-              <Link href="/contact">Contato </Link>
-            </li>
-          </ul>
+        <div className="flex  gap-12">
+          <a
+            href="https://www.facebook.com/flaviamachadobuffeteeventos/?locale=pt_BR"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300 ">
+              <FaFacebook />
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/flaviamachadobuffeteventos/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
+              <FaInstagram />
+            </div>
+          </a>
+          <a href="https://wa.link/" target="_blank" rel="noreferrer">
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
+              <FaWhatsapp />
+            </div>
+          </a>
         </div>
       </div>
 
