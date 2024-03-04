@@ -30,9 +30,7 @@ function SimpleMap() {
   return isLoaded ? (
     <div id="localizacao" className="mt-20">
       <div className="rounded-lg">
-        <h3 className="p-2 text-2xl sm:text-2xl font-black text-center text-white">
-          Localização
-        </h3>
+        
 
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
           <Marker position={center} />

@@ -2,39 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-// import { useRouter } from 'next/router';
 import NavLogo from "../public/assets/logo.png";
-
+import { RiMessage2Fill } from "react-icons/ri";
+import { Sling as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("black");
   const [textColor, setTextColor] = useState("white");
-  
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-      } else {
-        setColor("white");
-        setTextColor("#000000");
-      }
-    };
-    window.addEventListener("", changeColor);
-  }, []);
-
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className={"fixed h-[95px]  top-0  w-full z-10   ease-in duration-300"}
+      className={"fixed h-[90px]  top-0  w-full z-10   ease-in duration-300"}
     >
-      <div className="flex items-center justify-around w-full h-full ">
+      <div className="flex items-center justify-between md:justify-around w-full h-full p-4">
         <Link legacyBehavior href="/">
           <a>
             <Image
@@ -50,16 +36,61 @@ const Navbar = () => {
             />
           </a>
         </Link>
-
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4 hover:text-gray-600">
-            <Link href="/contact">Fale conosco</Link>
+          <li className=" flex items-center  hover:text-gray-600">
+            <Link className="p-3" href="/contact">Fale conosco</Link>
+            <RiMessage2Fill />
           </li>
         </ul>
+
+        {/*Mobile button */}
+        <div onClick={handleNav} className="block sm:hidden z-10">
+        <Hamburger color="white" toggled={nav} toggle={setNav} />
       </div>
+        {/*Mobile menu */}
+        <div
+          className={
+            nav
+              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838]  text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838] text-center ease-in duration-300"
+          }
+        >
+          <ul>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-600"
+            >
+              <Link href="/">Home</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-600"
+            >
+              <Link href="/#galeria">Galeria de fotos</Link>
+            </li>
 
-
-      <div className="bg-[#38220f] w-full  grid justify-center ">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-600"
+            >
+              <Link href="/#principios">Principios</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-600"
+            >
+              <Link href="/#localizacao">Localização</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl text-white hover:text-gray-600"
+            >
+              <Link href="/contact">Contato</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="md:bg-[#38220f] w-full md:h-[60px] grid justify-center ">
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4 hover:text-gray-600">
             <Link href="/">Home</Link>
@@ -72,57 +103,6 @@ const Navbar = () => {
           </li>
           <li className="p-4 hover:text-gray-600">
             <Link href="/#localizacao">Localização</Link>
-          </li>
-        </ul>
-      </div>
-
-      {/*Mobile button */}
-      <div onClick={handleNav} className="block sm:hidden z-10">
-        {nav ? (
-          <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
-        ) : (
-          <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
-        )}
-      </div>
-      {/*Mobile menu */}
-      <div
-        className={
-          nav
-            ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838]  text-center ease-in duration-300"
-            : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838] text-center ease-in duration-300"
-        }
-      >
-        <ul>
-          <li
-            onClick={handleNav}
-            className="p-4 text-4xl text-white hover:text-gray-600"
-          >
-            <Link href="/">Home</Link>
-          </li>
-          <li
-            onClick={handleNav}
-            className="p-4 text-4xl text-white hover:text-gray-600"
-          >
-            <Link href="/#galeria">Galeria de fotos</Link>
-          </li>
-
-          <li
-            onClick={handleNav}
-            className="p-4 text-4xl text-white hover:text-gray-600"
-          >
-            <Link href="/#principios">Principios</Link>
-          </li>
-          <li
-            onClick={handleNav}
-            className="p-4 text-4xl text-white hover:text-gray-600"
-          >
-            <Link href="/#localizacao">Localização</Link>
-          </li>
-          <li
-            onClick={handleNav}
-            className="p-4 text-4xl text-white hover:text-gray-600"
-          >
-            <Link href="/contact">Contato</Link>
           </li>
         </ul>
       </div>
