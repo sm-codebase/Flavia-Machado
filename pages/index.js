@@ -4,6 +4,8 @@ import Video from "../components/Video";
 import Gallery from "../components/Gallery";
 import Valores from "../components/Valores";
 import SimpleMap from "../components/SimpleMap";
+import Banner from "../components/Banner";
+import Valores2 from "../components/Valores2";
 
 export default function Home() {
   return (
@@ -14,9 +16,10 @@ export default function Home() {
         <link rel="icon" href="/logo-1.png" />
       </Head>
       <Carousel />
-      <Video />
-      <Gallery />
       <Valores />
+      <Gallery />
+      <Valores2 />
+      <Banner />
       <SimpleMap />
     </div>
   );

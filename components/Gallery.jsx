@@ -5,15 +5,19 @@ import Modal from "./Modal"; // Um componente de modal que você precisará cria
 import ProdutoImg1 from "../public/assets/galeria/pt-img-1.jpeg";
 import ProdutoImg2 from "../public/assets/galeria/pt-img-2.jpeg";
 import ProdutoImg3 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg4 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg5 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg6 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg7 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg8 from "../public/assets/galeria/pt-img-3.jpeg";
 
 const Gallery = () => {
   const [selectedImg, setSelectedImg] = useState(null);
-  const images = [ProdutoImg1, ProdutoImg2, ProdutoImg3];
+  const images = [ProdutoImg1, ProdutoImg2, ProdutoImg3, ProdutoImg4, ProdutoImg5, ProdutoImg6, ProdutoImg7, ProdutoImg8];
 
   const handleClick = (img) => {
-    setSelectedImg(img);2
-
-    
+    setSelectedImg(img);
+    2;
   };
 
   const handlePrev = () => {
@@ -29,20 +33,17 @@ const Gallery = () => {
   };
 
   return (
-    <div id="galeria" className="container mx-auto text-black p-4">
-      <div className="grid justify-items-center">
-        <div className="text-white text-2xl p-2">
-          <p>Galeria de fotos</p>
-        </div>
-        <div className="grid lg:grid-cols-3 grid-cols-3">
+    <div id="galeria" className="  text-black ">
+      <div className="flex justify-items-center">
+        <div className="grid lg:grid-cols-4 grid-cols-1">
           {images.map((img, index) => (
             <Image
               key={index}
               src={img}
               alt={`imagem do produto ${index + 1}`}
-              width={400}
-              height={400}
-              className="rounded-lg p-4 cursor-pointer"
+              width={0}
+              height={0}
+              className="p-1 cursor-pointer"
               onClick={() => handleClick(img)}
             />
           ))}

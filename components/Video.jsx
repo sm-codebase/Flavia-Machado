@@ -5,7 +5,7 @@ const video = () => {
     <div id="services" className="container mx-auto text-black p-5 ">
       <div className="grid justify-items-center  ">
         <div>
-          <div className="grid text-center text-2xl text-white mt-6 p-4 ">
+          <div className="grid text-center text-2xl text-black mt-6 p-4 ">
             <p>Faça seu evento conosco</p>
           </div>
           <video
