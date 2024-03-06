@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import NavLogo from "../public/assets/logo.png";
 import { RiMessage2Fill } from "react-icons/ri";
-import { Sling as Hamburger } from 'hamburger-react'
+import { Sling as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -38,70 +38,80 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className=" flex items-center  hover:text-gray-600">
-            <Link className="p-3" href="/contact">Fale conosco</Link>
+            <Link className="p-3 text-lg " href="/contact">
+              Contato
+            </Link>
             <RiMessage2Fill />
           </li>
         </ul>
 
         {/*Mobile button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
-        <Hamburger color="white" toggled={nav} toggle={setNav} />
-      </div>
+          <Hamburger color="white" toggled={nav} toggle={setNav} />
+        </div>
         {/*Mobile menu */}
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838]  text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#000000] to-[#383838] text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#38220f] to-[#38220f]  text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 botton-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-[#38220f] to-[#38220f] text-center ease-in duration-300"
           }
         >
-          <ul>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/">Home</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/#galeria">Galeria de fotos</Link>
-            </li>
+          <div className="prod " style={{ margin: "0 20px" }}>
+           
 
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/#principios">Principios</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/#localizacao">Localização</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white hover:text-gray-600"
-            >
-              <Link href="/contact">Contato</Link>
-            </li>
-          </ul>
+            <ul>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl text-white hover:text-gray-600"
+                style={{
+                  borderBottom: "2px solid white",
+                  paddingBottom: "10px",
+                }}
+              >
+                <Link href="/">Home</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl   text-white hover:text-gray-600"
+              >
+                <Link href="/#galeria">Galeria de fotos</Link>
+              </li>
+
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl text-white hover:text-gray-600"
+              >
+                <Link href="/#principios">Eventos memoráveis</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl text-white hover:text-gray-600"
+              >
+                <Link href="/#localizacao">Localização</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl text-white hover:text-gray-600"
+              >
+                <Link href="/contact">Contato</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="md:bg-[#38220f] w-full md:h-[60px] grid justify-center ">
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4 hover:text-gray-600">
+          <li className="p-4 text-lg hover:text-gray-600">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4 hover:text-gray-600">
+          <li className="p-4 text-lg hover:text-gray-600">
             <Link href="/#galeria">Galeria de fotos</Link>
           </li>
-          <li className="p-4 hover:text-gray-600">
-            <Link href="/#principios">Principios</Link>
+          <li className="p-4 text-lg hover:text-gray-600">
+            <Link href="/#principios">Eventos memoráveis</Link>
           </li>
-          <li className="p-4 hover:text-gray-600">
+          <li className="p-4 text-lg hover:text-gray-600">
             <Link href="/#localizacao">Localização</Link>
           </li>
         </ul>

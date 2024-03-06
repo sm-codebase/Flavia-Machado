@@ -6,6 +6,7 @@ import Valores from "../components/Valores";
 import SimpleMap from "../components/SimpleMap";
 import Banner from "../components/Banner";
 import Valores2 from "../components/Valores2";
+import Whatsapp from "../components/Whatsapp";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Valores2 />
       <Banner />
       <SimpleMap />
+      <Whatsapp />
     </div>
   );
 }
