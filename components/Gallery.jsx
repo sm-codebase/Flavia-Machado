@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Modal from "./Modal"; // Um componente de modal que você precisará criar
 
-import ProdutoImg1 from "../public/assets/galeria/pt-img-1.jpeg";
-import ProdutoImg2 from "../public/assets/galeria/pt-img-2.jpeg";
-import ProdutoImg3 from "../public/assets/galeria/pt-img-3.jpeg";
-import ProdutoImg4 from "../public/assets/galeria/pt-img-3.jpeg";
-import ProdutoImg5 from "../public/assets/galeria/pt-img-3.jpeg";
-import ProdutoImg6 from "../public/assets/galeria/pt-img-3.jpeg";
-import ProdutoImg7 from "../public/assets/galeria/pt-img-3.jpeg";
-import ProdutoImg8 from "../public/assets/galeria/pt-img-3.jpeg";
+import ProdutoImg1 from "../public/assets/pt-img-1.jpg";
+import ProdutoImg2 from "../public/assets/pt-img-2.jpg";
+import ProdutoImg3 from "../public/assets/pt-img-3.jpg";
+import ProdutoImg4 from "../public/assets/pt-img-3.jpg";
+import ProdutoImg5 from "../public/assets/pt-img-5.jpg";
+import ProdutoImg6 from "../public/assets/pt-img-4.jpg";
+import ProdutoImg7 from "../public/assets/pt-img-3.jpg";
+import ProdutoImg8 from "../public/assets/pt-img-3.jpg";
 
 const Gallery = () => {
   const [selectedImg, setSelectedImg] = useState(null);

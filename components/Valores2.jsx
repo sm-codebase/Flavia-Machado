@@ -12,7 +12,7 @@ const Valores = () => {
           className="bg-white w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-gray-300 shadow-xl"
         >
           <div className="grid justify-center mt-10">
-            <FaGear size={70} color="#38220f" />
+            <FaGear size={70} color="#3f5f1c" />
           </div>
           <h1 className="grid text-center text-3xl font-bold text-gray-800 p-5">
             Estacionamento
@@ -29,7 +29,7 @@ const Valores = () => {
           className="bg-white w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-gray-300 shadow-xl"
         >
           <div className="grid justify-center mt-10">
-            <MdEnergySavingsLeaf size={80} color="#38220f" />
+            <MdEnergySavingsLeaf size={70} color="#3f5f1c" />
           </div>
           <h1 className="grid text-center text-3xl font-bold text-gray-800 p-5">
             Estacionamento
@@ -46,7 +46,7 @@ const Valores = () => {
           className="bg-white w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-gray-300 shadow-xl"
         >
           <div className="grid justify-center mt-10">
-            <GiWoodPile size={70} color="#38220f" />
+            <GiWoodPile size={70} color="#3f5f1c" />
           </div>
           <h1 className="grid text-center text-3xl font-bold text-gray-800 p-5">
             Estacionamento
@@ -62,7 +62,7 @@ const Valores = () => {
           className="bg-white w-[350px] md:w-[400px] h-[500px] hover:scale-110 hover:bg-gray-300 shadow-xl"
         >
           <div className="grid justify-center mt-10">
-            <GiWoodPile size={70} color="#38220f" />
+            <GiWoodPile size={70} color="#3f5f1c" />
           </div>
           <h1 className="grid text-center text-3xl font-bold text-gray-800 p-5">
             Infraestrutura
