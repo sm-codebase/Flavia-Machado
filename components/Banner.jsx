@@ -8,13 +8,13 @@ const Banner = () => {
       id: 1,
       src: banerimg,
       alt: "Image 1",
-      summary: "Casamentos",
-      description:
-        "Localizada no coração da cidade, a Casa de Eventos Estrela Dourada é o cenário perfeito para transformar seus sonhos em realidade. seus sonhos em realidade. seus sonhos em realidade. ",
+      summary: " A Essência da Sofisticação Natural no Espaço Flavia",
+      description1:"Bem-vindo ao Espaço Flavia, onde cada celebração é uma obra-prima de requinte e beleza. Sob a direção de Flavia Machado, nossos eventos transcendem as expectativas, proporcionando uma experiência majestosa que combina a grandiosidade da natureza com a sofisticação contemporânea.  ",
+      description2:"No Espaço Flavia, criamos memórias que perduram, onde cada detalhe é cuidadosamente planejado para oferecer uma experiência imersiva e excepcional aos nossos convidados. Venha fazer parte dessa jornada de elegância e encanto, onde a marca Flavia Machado é sinônimo de excelência e distinção.",
     },
   ];
   return (
-    <div className=" h-[600px] md:h-[500px] w-full relative group">
+    <div className="h-full md:h-[500px] w-full relative group">
       <div className=" w-full h-full  bg-center bg-cover duration-500 relative transition-opacity bg-black ">
         <Image
           className="opacity-30 transition-opacity duration-500 group-hover:opacity-30"
@@ -31,14 +31,12 @@ const Banner = () => {
               {slides[0].summary}
             </h1>
             <p className="text-white py-4 font-sans text-xl">
-              {slides[0].description}
+              {slides[0].description1}
             </p>
             <p className="text-white py-4 font-sans text-xl">
-              {slides[0].description}
+              {slides[0].description2}
             </p>
-            <p className="text-white py-4 font-sans text-xl">
-              {slides[0].description}
-            </p>
+          
           </div>
         </div>
       </div>

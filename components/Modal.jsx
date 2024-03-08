@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 
+
 const Modal = ({ img, onClose, onPrev, onNext }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">

@@ -6,12 +6,12 @@ const video = () => {
       <div className="grid justify-items-center  ">
         <div>
           <div className="grid text-center text-2xl text-black mt-6 p-4 ">
-            <p>Faça seu evento conosco</p>
+            <p></p>
           </div>
           <video
             controls
             src={"/assets/videos/video-1.mp4"}
-            style={{ width: "864px", height: "480px" }}
+            style={{ width: "850px", height: "480px", borderRadius: "30px" }}
             
           />
         </div>
