@@ -6,10 +6,10 @@ import ProdutoImg1 from "../public/assets/pt-img-1.jpg";
 import ProdutoImg2 from "../public/assets/pt-img-2.jpg";
 import ProdutoImg3 from "../public/assets/pt-img-3.jpg";
 import ProdutoImg4 from "../public/assets/pt-img-3.jpg";
-import ProdutoImg5 from "../public/assets/pt-img-5.jpg";
+import ProdutoImg5 from "../public/assets/pt-img-3.jpg";
 import ProdutoImg6 from "../public/assets/pt-img-4.jpg";
 import ProdutoImg7 from "../public/assets/pt-img-3.jpg";
-import ProdutoImg8 from "../public/assets/pt-img-3.jpg";
+import ProdutoImg8 from "../public/assets/pt-img-4.jpg";
 
 const Gallery = () => {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -43,7 +43,7 @@ const Gallery = () => {
               alt={`imagem do produto ${index + 1}`}
               width={0}
               height={0}
-              className="p-1 cursor-pointer"
+              className=" cursor-pointer"
               onClick={() => handleClick(img)}
             />
           ))}

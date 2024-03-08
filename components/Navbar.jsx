@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import NavLogo from "../public/assets/logo.png";
 import { RiMessage2Fill } from "react-icons/ri";
 import { Sling as Hamburger } from "hamburger-react";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,14 +37,31 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className=" flex items-center  hover:text-gray-600">
-            <Link className="p-3 text-lg " href="/contact">
-              Contato
-            </Link>
-            <RiMessage2Fill />
-          </li>
-        </ul>
+        <div className="flex  gap-10">
+          <a
+            href="https://www.facebook.com/flaviamachadobuffeteeventos/?locale=pt_BR"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300 ">
+              <FaFacebook />
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/flaviamachadobuffeteventos/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
+              <FaInstagram />
+            </div>
+          </a>
+          <a href="https://wa.link/" target="_blank" rel="noreferrer">
+            <div className="text-2xl text-white cursor-pointer hover:text-gray-300">
+              <FaWhatsapp />
+            </div>
+          </a>
+        </div>
 
         {/*Mobile button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
@@ -58,8 +76,6 @@ const Navbar = () => {
           }
         >
           <div className="prod " style={{ margin: "0 20px" }}>
-           
-
             <ul>
               <li
                 onClick={handleNav}
