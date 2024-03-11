@@ -6,6 +6,7 @@ import NavLogo from "../public/assets/logo.png";
 import { RiMessage2Fill } from "react-icons/ri";
 import { Sling as Hamburger } from "hamburger-react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import DropDown from "./DropDown";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -125,7 +126,7 @@ const Navbar = () => {
             <Link href="/#galeria">Galeria de fotos</Link>
           </li>
           <li className="p-4 text-lg hover:text-gray-600">
-            <Link href="/#principios">Eventos memoráveis</Link>
+            <DropDown />
           </li>
           <li className="p-4 text-lg hover:text-gray-600">
             <Link href="/#localizacao">Localização</Link>

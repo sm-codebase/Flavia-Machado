@@ -7,8 +7,9 @@ import SimpleMap from "../components/SimpleMap";
 import Banner from "../components/Banner";
 import Valores2 from "../components/Valores2";
 import Whatsapp from "../components/Whatsapp";
-import Contact from "../components/Contact";
-import Galeria from "../components/Galeria";
+import Contact from "../components/Contact"
+import Galeria from "../components/Galeria"
+
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       </Head>
       <Carousel />
       <Valores />
-      <Gallery />
+      <Galeria />
       <Valores2 />
       <Banner />
       <Video/>

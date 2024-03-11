@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Modal from "./Modal"; // Um componente de modal que você precisará criar
+import Modal from "./Modal"; 
 
 import ProdutoImg1 from "../public/assets/pt-img-1.jpg";
 import ProdutoImg2 from "../public/assets/pt-img-2.jpg";
