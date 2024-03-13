@@ -33,7 +33,7 @@ const Gallery = () => {
   };
 
   return (
-    <div id="galeria" className="  text-black ">
+    <div id="galeria" className="  text-black mt-[150px] p-10">
       <div className="flex justify-items-center">
         <div className="grid lg:grid-cols-4 grid-cols-1">
           {images.map((img, index) => (
@@ -43,7 +43,7 @@ const Gallery = () => {
               alt={`imagem do produto ${index + 1}`}
               width={0}
               height={0}
-              className=" cursor-pointer"
+              className="p-5 cursor-pointer"
               onClick={() => handleClick(img)}
             />
           ))}

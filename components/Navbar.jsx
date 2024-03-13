@@ -123,7 +123,7 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4 text-lg hover:text-gray-600">
-            <Link href="/#galeria">Galeria de fotos</Link>
+            <Link href="/galeria">Galeria de fotos</Link>
           </li>
           <li className="p-4 text-lg hover:text-gray-600">
             <DropDown />
